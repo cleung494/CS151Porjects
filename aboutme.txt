@@ -1,0 +1,12 @@
+Your name: Christopher Leung
+Your student ID: 008405033
+Your major: Computer Science
+Your preferred email address: 
+Check one: [x ] Undergraduate, [ ] Graduate, [ ] Open university 
+Repeating the class? [x ] Yes, [ ] No
+Place and semester where you took a programming course in Java: San Jose State University Fall 2012-Fall 2016... AP Comp Sci - Alameda High School
+Course number and grade received: 3 on AP test
+Place and semester where you took a course in data structures: SJSU 
+Course number and grade received: CS 46B C-
+Time it took you to answer the two questions below:
+Did you ask anyone for help? [ ] Yes, [x] No
