@@ -8,5 +8,5 @@ Place and semester where you took a programming course in Java: San Jose State U
 Course number and grade received: 3 on AP test
 Place and semester where you took a course in data structures: SJSU 
 Course number and grade received: CS 46B C-
-Time it took you to answer the two questions below:
+Time it took you to answer the two questions below: ~ 1 hour to 1 hour and a half
 Did you ask anyone for help? [ ] Yes, [x] No
