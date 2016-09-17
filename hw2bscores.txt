@@ -1,0 +1,163 @@
+Student: leung_christopher
+Program compiles and passes test cases (max. 10 points): 0
+sequence.png (max. 5 points): 0
+hw2b.txt (max. 5 points): 0
+ 
+javac: file not found: *.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+Error: Could not find or load main class MailSystemTester
+... diff -w output2.txt expected2.txt ...
+0a1,14
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> [L]ogin  [N]ew user  [Q]uit:
+> [L]ogin  [N]ew user  [Q]uit:
+> Select a user name:
+> Select a password:
+> User added.
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> User name:
+> Password:
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> [L]ogin  [N]ew user  [Q]uit:
+Error: Could not find or load main class MailSystemTester
+... diff -w output3.txt expected3.txt ...
+0a1,17
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> Select a user name:
+> Select a password:
+> User added.
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> User name:
+> Password:
+> Welcome fred.
+> [S]end message  [R]ead messages  [L]ogout:
+> To:
+> Message text, . to end:
+> Message not sent.
+> [S]end message  [R]ead messages  [L]ogout:
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+Error: Could not find or load main class MailSystemTester
+... diff -w output4.txt expected4.txt ...
+0a1,17
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> Select a user name:
+> Select a password:
+> User added.
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> User name:
+> Password:
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> User name:
+> Password:
+> Welcome fred.
+> [S]end message  [R]ead messages  [L]ogout:
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+Error: Could not find or load main class MailSystemTester
+... diff -w output5.txt expected5.txt ...
+0a1,12
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> Select a user name:
+> Select a password:
+> User added.
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> Select a user name:
+> Select a password:
+> User not added.
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+Error: Could not find or load main class MailSystemTester
+... diff -w output6.txt expected6.txt ...
+0a1,42
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> Select a user name:
+> Select a password:
+> User added.
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> Select a user name:
+> Select a password:
+> User added.
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> User name:
+> Password:
+> Welcome fred.
+> [S]end message  [R]ead messages  [L]ogout:
+> To:
+> Message text, . to end:
+> Message sent.
+> [S]end message  [R]ead messages  [L]ogout:
+> To:
+> Message text, . to end:
+> Message sent.
+> [S]end message  [R]ead messages  [L]ogout:
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> User name:
+> Password:
+> Welcome mary.
+> [S]end message  [R]ead messages  [L]ogout:
+> From: fred
+> Hi Mary, what's up?
+> Etc. Etc.
+> [K]eep  [E]rase:
+> [N]ext  [D]one with messages:
+> From: fred
+> Hi Mary, here is another message.
+> [K]eep  [E]rase:
+> [N]ext  [D]one with messages:
+> [S]end message  [R]ead messages  [L]ogout:
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+Error: Could not find or load main class MailSystemTester
+... diff -w output.txt expected.txt ...
+0a1,34
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> Select a user name:
+> Select a password:
+> User added.
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> Select a user name:
+> Select a password:
+> User added.
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> User name:
+> Password:
+> Welcome fred.
+> [S]end message  [R]ead messages  [L]ogout:
+> To:
+> Message text, . to end:
+> Message sent.
+> [S]end message  [R]ead messages  [L]ogout:
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+> User name:
+> Password:
+> Welcome mary.
+> [S]end message  [R]ead messages  [L]ogout:
+> From: fred
+> Hi Mary, what's up?
+> Etc. Etc.
+> [K]eep  [E]rase:
+> [N]ext  [D]one with messages:
+> [S]end message  [R]ead messages  [L]ogout:
+> Welcome to TextChat.
+> [L]ogin  [N]ew user  [Q]uit:
+ 
