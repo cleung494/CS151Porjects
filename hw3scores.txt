@@ -1,0 +1,81 @@
+Student: leung_christopher
+At least 3 git commits (max. 5 points): 5
+DayWithTime compiles, passes tests (max. 10 points): 0
+MutableDay compiles, passes tests (max. 10 points): 0
+
+DayWithTimeTest.java
+DayWithTimeTest.java:10: error: cannot access DayWithTime
+      DayWithTime d = new DayWithTime(2016, 9, 1, 12, 30);
+      ^
+  bad source file: ./DayWithTime.java
+    file does not contain class DayWithTime
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+JUnit version 4.11
+Could not find class: DayWithTimeTest
+
+Time: 0.002
+
+OK (0 tests)
+
+MutableDayTest.java
+JUnit version 4.11
+.
+ 
+commit 21750acb9bc83b8781cdaaf921c18025bc7dacfd
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Sep 21 23:55:20 2016 -0700
+
+    Create MutableDay.java
+
+:000000 100644 0000000... 6e9606c... A	hw3/MutableDay.java
+
+commit f2502ef6c46892fa1b0189afe5e07de554abf73f
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Sep 21 23:42:10 2016 -0700
+
+    Update DayWithTime.java
+
+:100644 100644 90c17bf... b9ba243... M	hw3/DayWithTime.java
+
+commit ef27c9b3e3c11c887465e4e1b3a75ab044bbab52
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Sep 21 23:39:48 2016 -0700
+
+    Update DayWithTime.java
+
+:100644 100644 30881e5... 90c17bf... M	hw3/DayWithTime.java
+
+commit 0c44a9334a8c56bfabc2ba751cd741330bc75446
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Sep 21 21:17:55 2016 -0700
+
+    Update DayWithTime.java
+
+:100644 100644 8b13789... 30881e5... M	hw3/DayWithTime.java
+
+commit aff807364d17513e02ced6fa3e5095b4432f262a
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Tue Sep 20 22:17:14 2016 -0700
+
+    Create DayWithTime.java
+
+:000000 100644 0000000... 8b13789... A	hw3/DayWithTime.java
+
+commit b0fd32eba434d79f425fe6d917934e2caff132e2
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Tue Sep 20 22:14:20 2016 -0700
+
+    Create Day.java
+
+:000000 100644 0000000... 8b13789... A	hw3/Day.java
+
+commit 29436ac33bce750cd01e539abfba0c1b7c1ea029
+Author: Cay Horstmann <cay@horstmann.com>
+Date:   Fri Sep 16 21:55:49 2016 -0700
+
+    Added hw2 scores
+
+:000000 100644 0000000... 03d9cef... A	hw2ascores.txt
+:000000 100644 0000000... f65d501... A	hw2bscores.txt
+ 
