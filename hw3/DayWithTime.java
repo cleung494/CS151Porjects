@@ -13,10 +13,12 @@ public class DayWithTime
       @param minutes the minutes between 0 and 59
    */
     
-    int m_hours, m_minutes;
+    static int m_hours, m_minutes;
    public DayWithTime(int aYear, int aMonth, int aDayOfMonth, int hours, int minutes)
    {
        julian = toJulian(aYear, aMonth, aDayOfMonth, hours, minutes);
+       m_hours = hours;
+       m_minutes = minutes;
    }
 
    /**
@@ -215,8 +217,8 @@ public class DayWithTime
       int year = jc - 4715;
       if (month > 2) --year;
       if (year <= 0) --year;
-      int hour = 0;
-      int minute= 0;
+      int hour = m_hours;
+      int minute= m_minutes;
       return new int[] { year, month, date, hour, minute };
    }
 
