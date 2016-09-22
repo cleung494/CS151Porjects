@@ -1,3 +1,5 @@
+package hw3;
+
 public class DayWithTime
 {
    /**
@@ -11,7 +13,7 @@ public class DayWithTime
       @param minutes the minutes between 0 and 59
    */
     
-    int year, month, dayofmonth, m_hours, m_minutes;
+    int m_hours, m_minutes;
    public DayWithTime(int aYear, int aMonth, int aDayOfMonth, int hours, int minutes)
    {
        julian = toJulian(aYear, aMonth, aDayOfMonth, hours, minutes);
@@ -76,7 +78,8 @@ public class DayWithTime
    */
    public DayWithTime plusDays(int n)
    {
-       return new DayWithTime(getYear(), getMonthValue(), getDayOfMonth() + n, getHours(), getMinutes());
+       //return new DayWithTime(getYear(), getMonthValue(), getDayOfMonth() + n, getHours(), getMinutes());
+       return new DayWithTime(julian + n);
    }
 
    /**
@@ -99,8 +102,8 @@ public class DayWithTime
    */
    public long minutesFrom(DayWithTime other)
    {
-       int year_difference = Math.abs(other.year - getYear());
-       int month_difference = Math.abs(other.month - getMonthValue());
+       int year_difference = Math.abs(other.getYear() - getYear());
+       int month_difference = Math.abs(other.getYear() - getMonthValue());
        int day_difference = Math.abs(other.getDayOfMonth() - getDayOfMonth());
        int hour_difference = Math.abs(other.getHours() - getHours());
        int minute_difference = Math.abs(other.getMinutes() - getMinutes());
@@ -121,14 +124,18 @@ public class DayWithTime
    */
    public int daysFrom(DayWithTime other)
    {
-       int year_difference = Math.abs(other.year - getYear());
-       int month_difference = Math.abs(other.month - getMonthValue());
+       int year_difference = Math.abs(other.getYear() - getYear());
+       int month_difference = Math.abs(other.getYear() - getMonthValue());
        int day_difference = Math.abs(other.getDayOfMonth() - getDayOfMonth());
        int y = year_difference * (525600);
        int m = month_difference * (43800);
        return (y + m + day_difference);
    }
 
+    private DayWithTime(int aJulian)
+    {
+        julian = aJulian;
+    }
  /**
       Computes the Julian day number of the given day.
       @param year a year
@@ -208,13 +215,12 @@ public class DayWithTime
       int year = jc - 4715;
       if (month > 2) --year;
       if (year <= 0) --year;
-      int hour;
-      int minute;
+      int hour = 0;
+      int minute= 0;
       return new int[] { year, month, date, hour, minute };
    }
 
    private int julian;
 }
-
 
 
