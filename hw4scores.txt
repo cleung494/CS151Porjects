@@ -1,0 +1,142 @@
+Student: leung_christopher
+At least 3 git commits (max. 5 points): 
+10 test cases pass (2 per test case, max. 20 points): 0
+All methods have javadoc (max. 5 points): 0
+ 
+Starting audit...
+[ERROR] /tmp/hw4/leung_christopher/NumberSequence.java:10:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw4/leung_christopher/NumberSequence.java:12:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw4/leung_christopher/NumberSequence.java:14: Missing a Javadoc comment. [JavadocType]
+[ERROR] /tmp/hw4/leung_christopher/NumberSequence.java:44:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw4/leung_christopher/NumberSequence.java:62:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw4/leung_christopher/NumberSequence.java:75:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw4/leung_christopher/NumberSequence.java:93:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw4/leung_christopher/NumberSequence.java:95: Missing a Javadoc comment. [JavadocType]
+Audit done.
+Checkstyle ends with 8 errors.
+NumberSequenceTest2.java
+./NumberSequence.java:12: error: <identifier> expected
+    static of(long... args)
+             ^
+./NumberSequence.java:12: error: cannot find symbol
+    static of(long... args)
+           ^
+  symbol:   class of
+  location: interface NumberSequence
+NumberSequenceTest2.java:8: error: cannot find symbol
+      NumberSequence sequence = NumberSequence.of(1, 4, 9, 16);
+                                              ^
+  symbol:   method of(int,int,int,int)
+  location: interface NumberSequence
+NumberSequenceTest2.java:14: error: cannot find symbol
+      NumberSequence oddSquares2 = NumberSequence.of(0, 1, 4, 9).filter(n -> n % 2 != 0);
+                                                 ^
+  symbol:   method of(int,int,int,int)
+  location: interface NumberSequence
+4 errors
+JUnit version 4.11
+Could not find class: NumberSequenceTest2
+
+Time: 0.002
+
+OK (0 tests)
+
+NumberSequenceTest3.java
+./NumberSequence.java:12: error: <identifier> expected
+    static of(long... args)
+             ^
+./NumberSequence.java:12: error: cannot find symbol
+    static of(long... args)
+           ^
+  symbol:   class of
+  location: interface NumberSequence
+NumberSequenceTest3.java:12: error: cannot find symbol
+      NumberSequence positiveRandoms = randomSequence.filter(n -> n > 0);
+                                                     ^
+  symbol:   method filter((n)->n > 0)
+  location: variable randomSequence of type NumberSequence
+3 errors
+JUnit version 4.11
+Could not find class: NumberSequenceTest3
+
+Time: 0.002
+
+OK (0 tests)
+
+NumberSequenceTest.java
+./NumberSequence.java:12: error: <identifier> expected
+    static of(long... args)
+             ^
+./NumberSequence.java:12: error: cannot find symbol
+    static of(long... args)
+           ^
+  symbol:   class of
+  location: interface NumberSequence
+NumberSequenceTest.java:23: error: cannot find symbol
+      NumberSequence sequence = NumberSequence.of(1, 7, 2, 9);
+                                              ^
+  symbol:   method of(int,int,int,int)
+  location: interface NumberSequence
+NumberSequenceTest.java:33: error: cannot find symbol
+      NumberSequence sequence = NumberSequence.of(1, 7, 2, 9);
+                                              ^
+  symbol:   method of(int,int,int,int)
+  location: interface NumberSequence
+NumberSequenceTest.java:41: error: cannot find symbol
+      NumberSequence sequence = NumberSequence.of(1, 7, 2, 9);
+                                              ^
+  symbol:   method of(int,int,int,int)
+  location: interface NumberSequence
+NumberSequenceTest.java:43: error: cannot find symbol
+      sequence = NumberSequence.of(1, 7, 2, 9);
+                               ^
+  symbol:   method of(int,int,int,int)
+  location: interface NumberSequence
+NumberSequenceTest.java:45: error: cannot find symbol
+      sequence = NumberSequence.of(1, 7, 2, 9);
+                               ^
+  symbol:   method of(int,int,int,int)
+  location: interface NumberSequence
+NumberSequenceTest.java:51: error: cannot find symbol
+      NumberSequence oddSquares = new SquareSequence().filter(n -> n % 2 != 0);
+                                                      ^
+  symbol:   method filter((n)->n % 2 != 0)
+  location: class SquareSequence
+NumberSequenceTest.java:69: error: cannot find symbol
+      NumberSequence sequence = NumberSequence.random(42);
+                                              ^
+  symbol:   method random(int)
+  location: interface NumberSequence
+9 errors
+JUnit version 4.11
+Could not find class: NumberSequenceTest
+
+Time: 0.002
+
+OK (0 tests)
+
+ 
+commit 517886f5e8630940d557c77b8d487e0b0bf59966
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Sep 28 20:48:41 2016 -0700
+
+    Create SquareSequence.java
+
+:000000 100644 0000000... 6e83950... A	hw4/SquareSequence.java
+
+commit b141fe540ab2630f8edbc6c0b15877733a654436
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Sep 28 20:46:33 2016 -0700
+
+    Update NumberSequence.java
+
+:100644 100644 8b13789... 7ad54e9... M	hw4/NumberSequence.java
+
+commit 7989735b941d89c6eb918b903fcf4989d5cd420c
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Sep 28 18:43:10 2016 -0700
+
+    Create NumberSequence.java
+
+:000000 100644 0000000... 8b13789... A	hw4/NumberSequence.java
+ 
