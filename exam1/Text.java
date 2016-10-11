@@ -22,7 +22,22 @@ public interface Text {
             num_times = num_read;
         }
         public String message() {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            return "From: " + send + "\n" + receive;
+        }
+        
+    }
+    class OneTimeText implements Text
+    {
+        private String send, receive;
+        int num_times;
+        public OneTimeText(String sender, String receiver, int num_read)
+        {
+            send = sender;
+            receive = receiver;
+            num_times = num_read;
+        }
+        public String message() {
+            return "";
         }
         
     }
