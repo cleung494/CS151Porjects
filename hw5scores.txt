@@ -1,0 +1,30 @@
+Student: leung_christopher
+Running java AnimationTester 600 yields two dials (max. 2 points):0
+Small dial horizontally centered in large dial (max. 2 points):0
+Large, medium, small tick marks on outer dial (max. 2 points):0
+Large, medium ticks on inner dial (max. 2 points):0
+Numbers 0...55 placed next to large ticks (max. 2 points):0
+Outer dial numbers in larger font than inner dial (max. 2 points):0
+Large hand red, small hand purple (max. 2 points):0
+When clicking Top, clock starts running (max. 2 points):0
+Arrow triangles rotate correctly (max. 2 points):0
+When clicking Second, clock stops running (max. 2 points):0
+When clicking Second again, clock jumps to catch up (max. 2 points):0
+When clicking Top, clock stops, and when clicking Second, resets (max. 2 points):0
+When running java AnimationTester 100, everything properly scaled (max. 2 points):0
+At least 3 git commits (max. 2 points):0
+checkstyle reports no errors (max. 2 points):0
+
+Files to process must be specified, found 0.
+javac: file not found: AnimationTester.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+
+commit 046cb282f45e4b2797016d99d3b4d58cc55e80e3
+Author: Cay Horstmann <cay@horstmann.com>
+Date:   Sun Oct 2 16:09:47 2016 -0700
+
+    Homework 4 scores
+
+:000000 100644 0000000... 6e0e553... A	hw4scores.txt
+
