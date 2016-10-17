@@ -1,0 +1,55 @@
+Student: leung_christopher
+Git
+
+exam submitted through Git, with commit every 10 minutes (max. 5): 5
+
+Question 1
+
+next arrow from NumberSequenceTest object to FilteredSequence object (max. 3 points): 0
+advanceToNext arrow from FilteredSequence object to itself (max. 2 points): 0
+hasNext arrow from FilteredSequence object to SquareSequence object (max. 3 points): 0
+next arrow from FilteredSequence object to SquareSequence object (max. 2 points): 0
+
+Corrupted file (43 bytes)
+
+Question 2
+
+Stopwatch has two dials (max. 3 points): 0
+Stopwatch implements MoveableShape (max. 1 point): 1
+Dial and ShapeIcon implement Icon  (max. 2 points): 2
+AnimationTester uses Stopwatch and ShapeIcon  (max. 2 points): 1
+
+Wrong arrow--use dotted arrow - - - - > for "uses"
+
+Question 3
+
+Text interface  (max. 3 points): 3
+PlainText class  (max. 2 points): 2
+OneTimeText class  (max. 3 points): 1
+
+The first time, message() must return the message
+
+Message class uses Text  (max. 4 points): 0
+
+Look at my solution!
+
+Message object constructed with PlainText or OneTimeText (max. 3 points): 0
+
+Question 4
+
+Constructor initializes inches  (max. 3 points): 0
+getFeet and getInches return inches / 12, % 12  (max. 2 points): 0
+sum correctly implemented  (max. 2 points): 0
+difference correctly implemented  (max. 3 points): 0
+
+No work
+
+Question 5
+
+Context JFileChooser (max. 2 points): 0
+Strategy FileFilter (max. 2 points): 0
+ConcreteStrategy FileNameExtensionFilter (max. 2 points): 0
+doWork() some method inside JFileChooser (max. 2 points): 0
+
+No work
+ 
