@@ -17,6 +17,10 @@ import javax.swing.*;
  */
 public class BoxedIcon implements Icon{
 
+    /**
+    * this program will put a rectangular box around the icon that's specified
+    **/
+    
     public BoxedIcon(Icon icon, int aSize)
     {
         pixel_size = aSize;
