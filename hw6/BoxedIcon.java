@@ -16,9 +16,10 @@ import javax.swing.*;
  */
 public class BoxedIcon implements Icon{
 
-    public BoxedIcon(int aSize)
+    public BoxedIcon(Icon icon, int aSize)
     {
         size = aSize;
+        image = icon;
     }
     
     @Override
@@ -28,12 +29,13 @@ public class BoxedIcon implements Icon{
 
     @Override
     public int getIconWidth() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (image.getIconHeight() + 2); //because there will be a 1 pixel space and 1 pixel thick line
     }
 
     @Override
     public int getIconHeight() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (image.getIconHeight() + 2);
     }
-    private int size;
+    private int pixel_size;
+    private Icon image;
 }
