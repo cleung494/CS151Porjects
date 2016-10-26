@@ -1,0 +1,215 @@
+Student: leung_christopher
+IconTester compiles and runs (max. 2 points): 2
+Box around dog (max. 5 points): 0
+Thick box around thin box around text (max. 5 points): 0 
+ShapeTester compiles and runs (max. 2 points): 2
+All four shapes show (max. 5 points): 5
+ShapeTester2 compiles and runs without errors (showing nothing) (max 3 points): 3
+At least 3 git commits (max. 2 points): 2 
+checkstyle reports no errors (max. 5 points): 2
+ 
+Starting audit...
+[ERROR] /tmp/hw6/leung_christopher/BoxedIcon.java:24:27: Expected @param tag for 'icon'. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedIcon.java:24:37: Expected @param tag for 'aSize'. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:24:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:29:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:34:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:39:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:44:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:54:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:64:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:69:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:74:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShape.java:79:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShapePathIterator.java:6: Missing a Javadoc comment. [JavadocType]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShapePathIterator.java:8:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShapePathIterator.java:17:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShapePathIterator.java:26:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShapePathIterator.java:82:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShapePathIterator.java:91:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShapePathIterator.java:96:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/BoxedShapePathIterator.java:101:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CarIcon.java:12:7: Unused @param tag for 'width'. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CarIcon.java:14:23: Expected @param tag for 'aWidth'. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CarIcon.java:19:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CarIcon.java:24:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CarIcon.java:29:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeIcon.java:5: Missing a Javadoc comment. [JavadocType]
+[ERROR] /tmp/hw6/leung_christopher/CompositeIcon.java:7:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeIcon.java:14:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeIcon.java:22:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeIcon.java:30:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:27:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:36:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:45:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:54:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:63:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:76:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:89:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:100:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:111:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShape.java:120:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShapePathIterator.java:27:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShapePathIterator.java:33:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShapePathIterator.java:39:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShapePathIterator.java:46:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/CompositeShapePathIterator.java:51:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/HouseShapeMaker.java:13:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/HouseShapeMaker.java:34:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/MarsIcon.java:20:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/MarsIcon.java:25:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/MarsIcon.java:30:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/ShapeIcon.java:24:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/ShapeIcon.java:29:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/ShapeIcon.java:31:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/hw6/leung_christopher/ShapeIcon.java:34:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/ShapeIcon.java:36:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /tmp/hw6/leung_christopher/ShiftedIcon.java:4: Missing a Javadoc comment. [JavadocType]
+[ERROR] /tmp/hw6/leung_christopher/ShiftedIcon.java:6:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/ShiftedIcon.java:13:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/ShiftedIcon.java:18:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/ShiftedIcon.java:23:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/TextShapeMaker.java:12:4: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /tmp/hw6/leung_christopher/TextShapeMaker.java:22:4: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 62 errors.
+javac IconTester.java
+javac ShapeTester2.java ShapeTester.java
+ 
+commit e2a3df88f4719e25ae65cb6cedc5739d76cab9e4
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 22:29:06 2016 -0700
+
+    Create HouseShapeMaker.java
+
+:000000 100644 0000000... 5cdd311... A	hw6/HouseShapeMaker.java
+
+commit 1a9f2d7ff126db2a0166f457dab5da778fed906f
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 22:28:47 2016 -0700
+
+    Create CompositeShape.java
+
+:000000 100644 0000000... 7f28cec... A	hw6/CompositeShape.java
+
+commit e1574320d5cf5ea86174beda80f26d31e141d09a
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 22:28:20 2016 -0700
+
+    Create BoxedShapePathIterator.java
+
+:000000 100644 0000000... 331987f... A	hw6/BoxedShapePathIterator.java
+
+commit 7110f2b1a5a44d4b33359d85e91073a8e07fe591
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 22:26:41 2016 -0700
+
+    Create ShapeTester.java
+
+:000000 100644 0000000... e545c8e... A	hw6/ShapeTester.java
+
+commit df146890e8206c3372cf96000851861201edac23
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 22:23:41 2016 -0700
+
+    Update BoxedIcon.java
+
+:100644 100644 08a61f5... 5042e20... M	hw6/BoxedIcon.java
+
+commit f7d61a98548bc52f7be65268014771431ba9981d
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 22:19:09 2016 -0700
+
+    Update BoxedIcon.java
+
+:100644 100644 0521352... 08a61f5... M	hw6/BoxedIcon.java
+
+commit 246a558564117cb6089d67bb593f02641e4693b4
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 21:51:43 2016 -0700
+
+    Update BoxedIcon.java
+
+:100644 100644 bfb02e8... 0521352... M	hw6/BoxedIcon.java
+
+commit 9553585471a8bc3049cc59b805ffbe2fc08b8a63
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 21:33:19 2016 -0700
+
+    Update BoxedIcon.java
+
+:100644 100644 60ae694... bfb02e8... M	hw6/BoxedIcon.java
+
+commit c01f2d09d9607006105189dc30a4dfd31dacff6e
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 20:55:53 2016 -0700
+
+    Create IconTester.java
+
+:000000 100644 0000000... ee611fe... A	hw6/IconTester.java
+
+commit 096fd78faab973b40b5049beb21587ee1e65648f
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 20:55:21 2016 -0700
+
+    Create ShapeIcon.java
+
+:000000 100644 0000000... 5036a92... A	hw6/ShapeIcon.java
+
+commit f60aa984053fdbce3dae7558e84c589b210a019d
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 20:55:00 2016 -0700
+
+    Create TextShapeMaker.java
+
+:000000 100644 0000000... 39761a0... A	hw6/TextShapeMaker.java
+
+commit 5f15255b4145681b7dcf3e71821a9dac2bdf4f26
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 20:54:38 2016 -0700
+
+    Create ShiftedIcon.java
+
+:000000 100644 0000000... e6d7ee0... A	hw6/ShiftedIcon.java
+
+commit 75367897ac649af329a9522e38be66470b8335b7
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 20:54:16 2016 -0700
+
+    Create CarIcon.java
+
+:000000 100644 0000000... 0e6c516... A	hw6/CarIcon.java
+
+commit 244f05c35eb61b747aac748af74307123fb129a0
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 20:45:36 2016 -0700
+
+    Create MarsIcon.java
+
+:000000 100644 0000000... 4deb1ae... A	hw6/MarsIcon.java
+
+commit 8fdc7b4ddde6d47f95c59849e886f1cc66758b46
+Author: cleung494 <christopher.leung@sjsu.edu>
+Date:   Wed Oct 19 20:34:57 2016 -0700
+
+    Create BoxedIcon.java
+
+:000000 100644 0000000... 60ae694... A	hw6/BoxedIcon.java
+
+commit 88c763fd4b59089a30448b665c04682d66f790f1
+Author: Cay Horstmann <cay@horstmann.com>
+Date:   Sun Oct 16 18:22:52 2016 -0700
+
+    Exam 1 scores
+
+:000000 100644 0000000... 9fde501... A	exam1/2016-10-16 15.23.27.jpg
+:000000 100644 0000000... a2dd05e... A	exam1scores.txt
+
+commit 7d6cd2d23cee458977f0ab0c9821b4705892f294
+Author: Cay Horstmann <cay@horstmann.com>
+Date:   Sun Oct 16 08:19:02 2016 -0700
+
+    Homework 5 scores
+
+:000000 100644 0000000... 6b9f652... A	hw5scores.txt
+ 
