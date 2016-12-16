@@ -8,7 +8,7 @@ import java.awt.geom.Rectangle2D;
 /**
    A shape that boxes another shape.
 */
-public class BoxedShape implements Shape
+public class BoxedShape implements Shape, Cloneable
 {
    /**
       Constructs a boxed shape.
@@ -83,4 +83,19 @@ public class BoxedShape implements Shape
 
    private Shape shape;
    private int padding;
+   
+   public Object clone()
+   {
+       try
+       {
+           BoxedShape cloned = (BoxedShape) super.clone();
+           cloned.shape = (Shape)shape.clone();
+           cloned.padding = (int)padding.clone();
+           return cloned;
+       }
+       catch(CloneNotSupportedException e)
+       {
+           return null;
+       }
+   }
 }
