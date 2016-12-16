@@ -98,4 +98,18 @@ public class BoxedShape implements Shape, Cloneable
            return null;
        }
    }
+      //Serialization
+        
+    public void Serialize()
+    {
+       try {
+           ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("BoxedShapeOutput.txt"));
+           BoxedShape box = new BoxedShape(this.shape, this.padding);
+           out.writeObject(box);
+           out.close();
+       } 
+       catch (IOException ex) {
+           Logger.getLogger(BoxedShape.class.getName()).log(Level.SEVERE, null, ex);
+       }
+    }
 }
