@@ -23,7 +23,7 @@ for (int i = 0; i < n; i++)
 // Wait until all tasks have finished
 // All results are now in r
 
--> Essentially, what this code does is that it checkes every number within a range to see if it's a palindrome number. If it is, then the number will be added into the array list in one of the nodes.
+-> Essentially, what this code does is that it checkes every number within a range to see if it's a palindrome number. If it is, then the number will be added into the array list in one of the nodes. Using a callable should result in a single object, r, that will hold all the data.
 This code should work.
 
 b.
@@ -57,7 +57,7 @@ for (int i = 0; i < n; i++)
 // Wait until all tasks have finished
 // All results are now in r
 
-->
+-> This code may not work. Because of the fact that the code is using a lock, some numbers that are palindromes will not appear in the list. It can result in a deadlock because a process may not continue, following a lock, if it does not open up again.
 
 c.
 List<BigInteger> r = new LinkedList<>();
@@ -89,6 +89,10 @@ for (int i = 0; i < n; i++)
 }
 // Wait until all tasks have finished
 // All results are now in r
+
+->
+
+d.
 BlockingQueue<BigInteger> r = new LinkedBlockingQueue<>();
 BigInteger start = ...;
 long length = ...;
@@ -118,7 +122,7 @@ for (int i = 0; i < n; i++)
 
 ->
 
-d.
+e.
 Map<Long, BigInteger> r = new HashMap<>();
 BigInteger start = ...;
 long length = ...;
@@ -148,7 +152,7 @@ for (int i = 0; i < n; i++)
 
 ->
 
-e.
+f.
 Map<Long, BigInteger> r = new ConcurrentHashMap<>();
 BigInteger start = ...;
 long length = ...;
@@ -178,7 +182,7 @@ for (int i = 0; i < n; i++)
 
 ->
 
-f.
+g.
 List<BigInteger> r = new ArrayList<>();
 BigInteger start = ...;
 long length = ...;
