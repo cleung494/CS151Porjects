@@ -1,0 +1,209 @@
+a. 
+List<BigInteger> r = new ArrayList<>();
+BigInteger start = ...;
+long length = ...;
+int n = ...;
+ExecutorService service = ...;
+for (int i = 0; i < n; i++)
+{
+   long from = i * length / n; 
+   long to = (i + 1) * length / n;
+
+   Callable<Void> task = () ->
+      {
+         for (long j = from; j < to; j++)
+         {
+            BigInteger a = start.add(BigInteger.valueOf(j)).pow(2);
+            if (isPalindrome(a)) r.add(a);
+         }
+         return null;
+      };
+   service.submit(task);
+}
+// Wait until all tasks have finished
+// All results are now in r
+
+-> Essentially, what this code does is that it checkes every number within a range to see if it's a palindrome number. If it is, then the number will be added into the array list in one of the nodes.
+This code should work.
+
+b.
+List<BigInteger> r = new LinkedList<>();
+Lock lock = new ReentrantLock();
+BigInteger start = ...;
+long length = ...;
+int n = ...;
+ExecutorService service = ...;
+for (int i = 0; i < n; i++)
+{
+   long from = i * length / n; 
+   long to = (i + 1) * length / n;
+
+   Callable<Void> task = () ->
+      {
+         for (long j = from; j < to; j++)
+         {
+            BigInteger a = start.add(BigInteger.valueOf(j)).pow(2);
+            if (isPalindrome(a))
+            {
+               lock.lock();
+               r.add(a);
+               lock.unlock();
+            }
+         }
+         return null;
+      };
+   service.submit(task);
+}
+// Wait until all tasks have finished
+// All results are now in r
+
+->
+
+c.
+List<BigInteger> r = new LinkedList<>();
+BigInteger start = ...;
+long length = ...;
+int n = ...;
+ExecutorService service = ...;
+for (int i = 0; i < n; i++)
+{
+   long from = i * length / n; 
+   long to = (i + 1) * length / n;
+
+   Callable<Void> task = () ->
+      {
+         Lock lock = new ReentrantLock();
+         for (long j = from; j < to; j++)
+         {
+            BigInteger a = start.add(BigInteger.valueOf(j)).pow(2);
+            if (isPalindrome(a))
+            {
+               lock.lock();
+               r.add(a);
+               lock.unlock();
+            }
+         }
+         return null;
+      };
+   service.submit(task);
+}
+// Wait until all tasks have finished
+// All results are now in r
+BlockingQueue<BigInteger> r = new LinkedBlockingQueue<>();
+BigInteger start = ...;
+long length = ...;
+int n = ...;
+ExecutorService service = ...;
+for (int i = 0; i < n; i++)
+{
+   long from = i * length / n; 
+   long to = (i + 1) * length / n;
+
+   Callable<Void> task = () ->
+      {
+         for (long j = from; j < to; j++)
+         {
+            BigInteger a = start.add(BigInteger.valueOf(j)).pow(2);
+            if (isPalindrome(a))
+            {
+               r.put(a);
+            }
+         }
+         return null;
+      };
+   service.submit(task);
+}
+// Wait until all tasks have finished
+// All results are now in r
+
+->
+
+d.
+Map<Long, BigInteger> r = new HashMap<>();
+BigInteger start = ...;
+long length = ...;
+int n = ...;
+ExecutorService service = ...;
+for (int i = 0; i < n; i++)
+{
+   long from = i * length / n; 
+   long to = (i + 1) * length / n;
+
+   Callable<Void> task = () ->
+      {
+         for (long j = from; j < to; j++)
+         {
+            BigInteger a = start.add(BigInteger.valueOf(j)).pow(2);
+            if (isPalindrome(a))
+            {
+               r.put(j, a);
+            }
+         }
+         return null;
+      };
+   service.submit(task);
+}
+// Wait until all tasks have finished
+// All results are now in r.values()
+
+->
+
+e.
+Map<Long, BigInteger> r = new ConcurrentHashMap<>();
+BigInteger start = ...;
+long length = ...;
+int n = ...;
+ExecutorService service = ...;
+for (int i = 0; i < n; i++)
+{
+   long from = i * length / n; 
+   long to = (i + 1) * length / n;
+
+   Callable<Void> task = () ->
+      {
+         for (long j = from; j < to; j++)
+         {
+            BigInteger a = start.add(BigInteger.valueOf(j)).pow(2);
+            if (isPalindrome(a))
+            {
+               r.putIfAbsent(j, a);
+            }
+         }
+         return null;
+      };
+   service.submit(task);
+}
+// Wait until all tasks have finished
+// All results are now in r.values()
+
+->
+
+f.
+List<BigInteger> r = new ArrayList<>();
+BigInteger start = ...;
+long length = ...;
+int n = ...;
+ExecutorService service = ...;
+List<Future<List<BigInteger>>> futures = new ArrayList<>();
+for (int i = 0; i < n; i++)
+{
+   long from = i * length / n; 
+   long to = (i + 1) * length / n;
+
+   Callable<List<BigInteger>> task = () ->
+      {
+         List<BigInteger> rtask = new ArrayList<>();
+         for (long j = from; j < to; j++)
+         {
+            BigInteger a = start.add(BigInteger.valueOf(j)).pow(2);
+            if (isPalindrome(a)) rtask.add(a);
+         }
+         return rtask;
+      };
+   futures.add(service.submit(task));
+}
+for (Future<List<BigInteger>> f : futures)
+   r.addAll(f.get());
+// All results are now in r
+
+->
