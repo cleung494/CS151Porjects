@@ -1,1 +1,5 @@
-
+Given:
+ Consider the UndoViolet and CollabViolet teams. Each of them benefited by having a Command interface to represent commands in Violet such as adding a node, joining nodes by an edge, removing a node, removing an edge, changing the position of a node, or changing a property of a node or edge. In the case of CollabViolet, these commands would be replayed on another machine. That is, a Command would have a method void do() to execute the command. In the case of UndoViolet, there would also be a method void undo() to undo the command. For example, the undo of adding a node is removing the node, and the undo of changing a node property is to set it back to its original value. Place your answer to this question in a file problem2.txt.
+ 
+ a. Explain why this is or is not an example of the Strategy design pattern.
+ A strategy design pattern is where a program allows its runtime execution to be used interchangeably. Since CollabViolet and UndoViolet would allow different machines to be able to execute the action, this is an example of a strategy design pattern.
