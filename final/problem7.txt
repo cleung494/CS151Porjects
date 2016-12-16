@@ -90,7 +90,7 @@ for (int i = 0; i < n; i++)
 // Wait until all tasks have finished
 // All results are now in r
 
-->
+->Unlike the previous, the lock is actually inside of the Callable and is not considered a global lock. It will not lock other processes going on and will not share the same lock. This code will work.
 
 d.
 BlockingQueue<BigInteger> r = new LinkedBlockingQueue<>();
@@ -120,7 +120,7 @@ for (int i = 0; i < n; i++)
 // Wait until all tasks have finished
 // All results are now in r
 
-->
+-> This line of code does not have any locks. It will continue to search for a big integer and flush all the numbers into the queue. It might not be in the right order but will result in the right numbers, but there might be more than one of the same number. The code will not work.
 
 e.
 Map<Long, BigInteger> r = new HashMap<>();
@@ -150,7 +150,7 @@ for (int i = 0; i < n; i++)
 // Wait until all tasks have finished
 // All results are now in r.values()
 
-->
+-> Hashmaps will automatically detect if there is another number in the list. If it's there already, it will not add more to the list. The code will work.
 
 f.
 Map<Long, BigInteger> r = new ConcurrentHashMap<>();
@@ -180,7 +180,7 @@ for (int i = 0; i < n; i++)
 // Wait until all tasks have finished
 // All results are now in r.values()
 
-->
+-> This is the same as the prior but using different method and will yield the same result. The code will work.
 
 g.
 List<BigInteger> r = new ArrayList<>();
@@ -210,4 +210,4 @@ for (Future<List<BigInteger>> f : futures)
    r.addAll(f.get());
 // All results are now in r
 
-->
+->An Array List will automatically sort the array. It looks for all numbers and uses futures to remove all duplicates. This code will work.
